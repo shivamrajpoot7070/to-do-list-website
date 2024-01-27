@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width:100%;
+    min-height: 100vh;
+    background:linear-gradient(135deg,#153677,#4e085f);
+    padding:10px;
+}
+
+.todoapp{
+    width:100%;
+    max-width: 540px;  
+    background: #fff;
+    margin:100px auto 20px;   
+    /* // for left right its auto */
+    padding:40px 30px 70px;
+    /* // for left right its 30 px padding */
+    border-radius: 10px;
+    
+}
+
+.todoapp h2{
+    color:red;
+    margin-bottom:20px;   
+    /* // margin will take place after h2 div  which is above row class not todo app div */
+   
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+/* // for search bar */
+
+input{
+    flex:1;      
+/* // flex will take all plaace of input  */
+   border: none;  
+    /* // for input border its none */
+    outline: none;
+    background: transparent;
+    padding:10px;
+    font-weight: 14px;
+}
+
+button{
+    border: none;  
+    /* // for input border its none */
+    outline: none;
+    border-radius: 40px;
+    background: #ff5945;
+    font-size: 16px;
+    cursor: pointer;
+    padding:10px 10px;
+    font-size: 16px;
+
+} 
+
+ul li{
+    list-style: none;
+    font-size: 14px;
+    padding:12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 19px;
+    width:19px;
+    border-radius: 50%;
+    top:12px;
+    left:8px;
+    background-image: url(img_137194.png.crdownload);
+    background-size: cover;
+    background-position: center;
+   
+    
+}
+
+ul li.checked{
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+     background-image: url(oo.png);
+     background-size: cover;
+   
+}
+
+ul li span{
+   position: absolute;
+   right:0;
+   top:5px;
+   width:40px;
+   height:40px;
+   font-size: 20px;
+   color:red;
+   line-height: 30px;
+   text-align: center;
+}
+
+ul li span:hover{
+    background: #bcceda;
+    border-radius: 50%;
+    
+    
+}
+
+
